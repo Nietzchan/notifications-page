@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root{
+  /* primary */
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue1: hsl(211, 68%, 94%);
+  --light-grayish-blue2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  text-decoration: none;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 980px;
+  margin-bottom: 18px;
+}
+
+span{
+  cursor: pointer;
+}
+
+header p{
+  color: var(--grayish-blue);
+  cursor: pointer;
+}
+
+header h2 {
+  display: flex;
+  gap: 12px;
+}
+
+.unreadNum {
+  color: var(--white);
+  font-size: 1rem;
+  background-color: var(--blue);
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 26px;
+  padding-top: 2px;
+  align-items: baseline;
+  border-radius: 5px;
+}
+
+.unread{
+  background-color: var(--very-light-grayish-blue);
+}
+
+.wrapper{
+  max-width: 980px;
+  color: var(--grayish-blue);
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 12px;
+  align-content: left;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+}
+
+.prof {
+  display: flex;
+  width: 100%;
+}
+
+.prof-img{
+  margin-right: 15px;
+}
+
+.message{
+  border: 1px solid var(--light-grayish-blue2);
+  padding: 1rem;
+  margin-left: 70px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.15s;
+}
+
+.message:hover{
+  background-color: var(--light-grayish-blue1);
+}
+
+img {
+  width: 56px;
+  height: 56px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.post-img {
+  margin-left: 10px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text{
+  margin-bottom: 5px;
+}
+
+.name,
+.group,
+.post {
+  font-weight: 800;
+}
+
+.post,
+.group {
+  color: var(--light-grayish-blue);
+  transition: all 0.15s;
+}
+
+header p:hover,
+.post:hover,
+.group:hover {
+  color: var(--blue);
+}
+
+.name {
+  color: var(--very-dark-blue);
+}
+
+.symbol {
+  color: var(--red);
+  font-weight: 800;
+}
