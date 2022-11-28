@@ -6,9 +6,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Notifications page</title>
+  <title>Notifications page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -17,8 +16,9 @@
 <body>
   <header>
     <h2>Notifications <span class="unreadNum">3</span></h2>
-    <p>Mark all as read</p>
+    <p id="readAll">Mark all as read</p>
   </header>
+
   <div class="wrapper unread">
     <div class="main">
       <img class="prof-img" src="images/avatar-mark-webber.webp" alt="Mark">
@@ -27,7 +27,12 @@
         <p>1m ago</p>
       </div>
     </div>
+    <img id="ellipsis" src="images/ellipsis-v.svg" alt="menu">
+    <div class="mark">
+      <p id="statusP">Mark as Read</p>
+    </div>
   </div>
+
   <div class="wrapper unread">
     <div class="main">
       <img class="prof-img" src="images/avatar-angela-gray.webp" alt="Angela">
@@ -36,7 +41,12 @@
         <p>5m ago</p>
       </div>
     </div>
+    <img id="ellipsis" src="images/ellipsis-v.svg" alt="menu">
+    <div class="mark">
+      <p id="statusP">Mark as Read</p>
+    </div>
   </div>
+
   <div class="wrapper unread">
     <div class="main">
       <img class="prof-img" src="images/avatar-jacob-thompson.webp" alt="Jacob">
@@ -45,49 +55,72 @@
         <p>1 day ago</p>
       </div>
     </div>
+    <img id="ellipsis" src="images/ellipsis-v.svg" alt="menu">
+    <div class="mark">
+      <p id="statusP">Mark as Read</p>
+    </div>
   </div>
+
   <div class="wrapper">
     <div class="main">
       <img class="prof-img" src="images/avatar-rizky-hasanuddin.webp" alt="Rizky">
       <div class="profile">
-        <p class="text"><span class='name'>Rizky Hasanuddin</span> sent you a private message</p><br>
+        <p class="text"><span class='name'>Rizky Hasanuddin</span> sent you a private message <span class="symbol"></span></p><br>
         <p>5 days ago</p>
       </div>
+    </div>
+    <img id="ellipsis" src="images/ellipsis-v.svg" alt="menu">
+    <div class="mark">
+      <p id="statusP">Mark as Read</p>
     </div>
     <div class="message">
       Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
       I'm already having lots of fun and improving my game.
     </div>
   </div>
+
   <div class="wrapper">
     <div class="main">
       <div class="prof">
         <img class="prof-img" src="images/avatar-kimberly-smith.webp" alt="Kimberly">
         <div class="profile">
-          <p class="text"><span class='name'>Kimberly Smith</span> commented on your picture</p><br>
+          <p class="text"><span class='name'>Kimberly Smith</span> commented on your picture <span class="symbol"></span></p><br>
           <p>1 week ago</p>
         </div>
       </div>
       <img class="post-img" src="images/image-chess.webp" alt="chess">
     </div>      
-    
+    <img id="ellipsis" src="images/ellipsis-v.svg" alt="menu">
+    <div class="mark">
+      <p id="statusP">Mark as Read</p>
+    </div>    
   </div>
+
   <div class="wrapper">
     <div class="main">
       <img class="prof-img" src="images/avatar-nathan-peterson.webp" alt="Nathan">
       <div class="profile">
-        <p class="text"><span class='name'>Nathan Peterson</span> reacted to your recent post <span class="post">5 end-game strategies to increase your win rate</span></p><br>
+        <p class="text"><span class='name'>Nathan Peterson</span> reacted to your recent post <span class="post">5 end-game strategies to increase your win rate</span> <span class="symbol"></span></p><br>
         <p>2 weeks ago</p>   
       </div>
     </div>
+    <img id="ellipsis" src="images/ellipsis-v.svg" alt="menu">
+    <div class="mark">
+      <p id="statusP">Mark as Read</p>
+    </div>
   </div>
+
   <div class="wrapper">
     <div class="main">
       <img src="images/avatar-anna-kim.webp" alt="Anna">
       <div class="profile">
-        <p class="text"><span class='name'>Anna Kim </span> left the group <span class='group'>Chess Club</span></p><br>
+        <p class="text"><span class='name'>Anna Kim </span> left the group <span class='group'>Chess Club</span> <span class="symbol"></span></p><br>
         <p>2 weeks ago</p>
       </div>
+    </div>
+    <img id="ellipsis" src="images/ellipsis-v.svg" alt="menu">
+    <div class="mark">
+      <p id="statusP">Mark as Read</p>
     </div>
   </div>
   
@@ -95,5 +128,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/Nietzchan">Nietzchan</a>.
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
